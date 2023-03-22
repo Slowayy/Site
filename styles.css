@@ -1,0 +1,17 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(105, 255, 74);
+    background-color: black;
+
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
