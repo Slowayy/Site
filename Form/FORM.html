@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <form action="/pagina-processa-dados-do-form" method="post">
+      <fieldset>
+        <legend>Dados Gerais</legend>
+        <label for="Nome">Nome:</label>
+        <input
+          type="text"
+          minlength="7"
+          id="Nome"
+          placeholder="Digite o seu nome completo*"
+          required
+        />
+
+        <label for="Data-Nascimento">Data Nascimento:</label>
+        <input
+          type="date"
+          id="Data-Nascimento"
+          placeholder="Informe sua data de nascimento"
+          required
+        />
+        <label for="CPF">CPF:</label>
+        <input type="number" minlength="11" id="CPF" />
+      </fieldset>
+      <fieldset>
+        <legend>Endereço</legend>
+
+        <label for="Tipo-Endereço">Tipo:</label>
+        <select id="Tipo-Endereço">
+          <option value="">Selecione</option>
+          <option value="">Rua</option>
+          <option value="">Estrada</option>
+          <option value="">Rodovia</option>
+          <option value="">Outros</option>
+        </select>
+
+        <label for="Logradouro-Endereço">Logradouro:</label>
+        <label for="Número-logradouro">Número:</label>
+        <label for="Complemento-logradouro">Complemento</label>
+        <input
+          type="text"
+          id="Logradouro-Endereço"
+          placeholder="Endereço*"
+          required="true"
+        />
+        <input
+          type="tel"
+          id="Número-logradouro"
+          placeholder="Número*"
+          required
+        />
+        <input
+          type="text"
+          id="Complemento-logradouro"
+          placeholder="Complemento"
+        />
+      </fieldset>
+      <fieldset>
+        <legend>Fale Conosco!</legend>
+        <label for="msg">Mensagem:</label>
+        <label for="num">Número:</label>
+        <input type="text" id="msg" placeholder="Sua Mensagem*" required />
+        <input type="number" id="num" placeholder="Seu Número*" required />
+      </fieldset>
+      <fieldset>
+        <button type="submit">Envie a Mensagem</button>
+        <button type="reset">Limpar o Formulário</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

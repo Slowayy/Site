@@ -1,0 +1,150 @@
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae at explicabo
+  impedit voluptatibus vero eos aperiam incidunt, fugit porro nemo sint dolorum
+  sapiente, <em><strong>harum eum</strong></em> rerum officia nesciunt esse?
+  Omnis.
+</p>
+<p>
+  Lorem ipsum <em><strong>dolor</strong></em> sit amet consectetur adipisicing
+  elit. Quae at explicabo impedit voluptatibus vero eos aperiam incidunt, fugit
+  porro nemo sint dolorum sapiente, harum eum rerum officia nesciunt esse?
+  Omnis.
+</p>
+<a href="https://www.google.com">Saiba mais</a>
+<!-- Listas no HTML -->
+
+<ul id="lista">
+  <li>Isto é uma lista não ordenada</li>
+  <li>Isto é uma lista não ordenada</li>
+  <li>Isto é uma lista não ordenada</li>
+  <li>Isto é uma lista não ordenada</li>
+  <li>Isto é uma lista não ordenada</li>
+  <li>Isto é uma lista não ordenada</li>
+</ul>
+
+<ol>
+  <li>Isto é uma lista ordenada</li>
+  <li>Isto é uma lista ordenada</li>
+  <li>Isto é uma lista ordenada</li>
+  <li>Isto é uma lista ordenada</li>
+  <li>Isto é uma lista ordenada</li>
+</ol>
+<blockquote
+  cite="https://app.rocketseat.com.br/discover/course/o-guia-estelar-de-html/trabalhando-com-elementos/citacoes"
+>
+  o <strong><code>&lt;blockquote&gt;</code></strong> é uma forma de citação de
+  um site para informação do texto
+</blockquote>
+
+<p>Parágrafo</p>
+
+<p>
+  No site da rocketseat aprendi que o elemento <code>&lt;cite&gt;</code> cita um
+  texto fora do site com um link de citação exemplo:
+  <a
+    href="https://app.rocketseat.com.br/discover/course/o-guia-estelar-de-html/trabalhando-com-elementos/citacoes"
+  >
+    <cite>AQUI LEVA PARA O SITE EXPLICANDO.</cite>
+  </a>
+</p>
+<p>
+  O elemento <code>&lt;q&gt;</code> é uma forma de fazer citações menores, no
+  código, dando mais semântica ao mesmo
+  <q
+    cite="https://app.rocketseat.com.br/discover/course/o-guia-estelar-de-html/trabalhando-com-elementos/citacoes"
+  >
+    utilizado em citações curtas que não precisam de quebra de linha ou
+    paragráfo.
+    <a
+      href="https://app.rocketseat.com.br/discover/course/o-guia-estelar-de-html/trabalhando-com-elementos/citacoes"
+    >
+      <cite>Onde aprendi!</cite></a
+    >
+  </q>
+</p>
+<!--Abreviações! Como funciona?-->
+<p>
+  Como podemos usar a tag<code>&lt;abbr&gt;</code>?<br />
+  Ela é uma TAG de abreviação, quando um elemento está dentro do seu
+  <code>&lt;title=" "&gt;</code> ele é quem vai explicar qual é a sua abreviação
+  no texto escrito. Sua tag é <code>&lt;abbr title=""&gt; &lt;/abbr&gt;</code>
+  um exemplo a seguir:
+  <abbr title="Brasil">BR</abbr>
+</p>
+<!--CONTATO?!-->
+<p>
+  Essa tag é aquela para fazer um "contato" telefone, email, instagram, etc.
+  <code>&lt;address&gt;</code>
+</p>
+<address>
+  <p>Telefone: 9999-9999 E-mail: xxxxxxx@gmail.com Site: www.zzzzzz.com</p>
+</address>
+
+<!--Mostrar códigos, ou blocos de código-->
+<p>
+  Para mostrar blocos de código no HTML precisamos utilizar das tags
+  <code>&lt;code&gt;</code> e ou <code>&lt;pre&gt;</code>, a tag de "code" faz
+  com que tenha uma marcação, exemplo: <code>Código</code>, mas e a outra? ela
+  serve para fazer com que o código tenha formatação exatamente igual você
+  escreveu, exemplo:
+</p>
+<pre>
+ 
+    aaaaaaaaaaaaaaaa
+     aaaaaaaaaaa
+    aaaaaaaaaaaaaaaa
+  </pre
+>
+
+<!--Div e Span-->
+
+A div serve para criar um bloco e fazer pequenar modificações dentro dele, O
+Span serve para meio que organizar as linhas dele, para separar o conteúdo
+<div>
+  Carrinho de compras
+  <span> Preço</span>
+</div>
+
+<!--Lista de descrição-->
+<dl id="desc">
+  Lista de descrição
+  <dt><code>&LT;dt&gt;</code>=DescriptionTerm=Termo de descrição</dt>
+  <dd>
+    <code>&lt;dd&gt;</code> =description - "dt" é o termo a ser descrevido<br />
+    "dd" é a descrição do "dt"
+  </dd>
+  <dt></dt>
+</dl>
+<!--TAG de Âncora(Links) -->
+<p id="ancora">Tag de Links</p>
+<p>
+  Podemos usar a tag Âncora, de várias formas, uma delas é para obviamente
+  linkar, um texto a um site, como o google exemplo abaixo
+</p>
+<a href="https://www.google.com">Site Goole</a> <br />
+<a href="https://www.google.com" target="_blank"
+  >Site google aberto em outra aba</a
+>
+<p>
+  Mas como fazemos isso? <br />
+  Utilizamos a tag <code>&lt;a href=""&gt;</code> a seguinte propriedade
+  <code>&lt;href""&gt;</code> será onde colocaremos o link desejado, e fora da
+  tag é onde o link será indexado, porém podemos fazer vários links dentro do
+  próprio site, usando o atributo de <code>&lt;#&gt;</code> no local do
+  <code>&lt;href""&gt;</code> ficaria mais ou menos assim
+  <code>&lt;a href"#teste"&gt;</code> o objeto <code>&lt;#teste&gt;</code> se
+  torna um "id" para colocarmos em algum outro local do site, levando o usuário
+  a tal ponto, como no exmplo feio, podemos colocar o "id" ao topo da página
+  para levar o usuário ao topo da página, mas necessário colocar dentro de uma
+  outra tag, abaixo um exemplo
+</p>
+
+<ul>
+  <li><a href="#ancora">Sobre a tag Âncora</a></li>
+  <li><a href="#lista">Sobre a tag de Listas</a></li>
+  <li><a href="#desc">Sobre a tag de descrição</a></li>
+</ul>
+
+<a href="Site.html" target="_blank">Encaminhar para outro arquivo</a>
+
+<a href="./Teste/teste.md"></a>
